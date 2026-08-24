@@ -1,23 +1,23 @@
 [
-  {
-    "Protocol": "UDP",
-    "Port": 7777,
-    "Ref": "GamePort",
-    "Name": "Game Port",
-    "Description": "Main Motor Town game port"
-  },
-  {
-    "Protocol": "UDP",
-    "Port": 27015,
-    "Ref": "QueryPort",
-    "Name": "Steam Query Port",
-    "Description": "Steam server query port"
-  },
-  {
-    "Protocol": "TCP",
-    "Port": 8080,
-    "Ref": "WebAPIPort",
-    "Name": "Web API Port",
-    "Description": "Optional Motor Town Web API port. Do not expose publicly unless protected by a secure reverse proxy."
-  }
+    {
+        "Protocol": "UDP",
+        "Port": 7777,
+        "Ref": "GamePort",
+        "Name": "Game Port",
+        "Description": "Main Motor Town game port"
+    },
+    {
+        "Protocol": "UDP",
+        "Port": 27015,
+        "Ref": "QueryPort",
+        "Name": "Steam Query Port",
+        "Description": "Steam server query port"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 8080,
+        "Ref": "WebAPIPort",
+        "Name": "Web API Port",
+        "Description": "Optional Motor Town Web API port. Do not expose publicly unless protected by a secure reverse proxy."
+    }
 ]

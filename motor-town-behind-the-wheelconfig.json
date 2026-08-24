@@ -1,17 +1,13 @@
 [
-  {
-    "DisplayName": "Additional Command Line Parameters",
-    "Category": "Advanced",
-    "Description": "Additional command line parameters passed directly to the Motor Town dedicated server.",
-    "Keywords": "custom command line parameters arguments",
-    "FieldName": "CustomParameters",
-    "InputType": "text",
-    "IsFlagArgument": false,
-    "ParamFieldName": "",
-    "IncludeInCommandLine": false,
-    "DefaultValue": "",
-    "Placeholder": "",
-    "Suffix": "",
-    "EnumValues": {}
-  }
+    {
+        "DisplayName": "Additional Command Line Parameters",
+        "Category": "Advanced",
+        "Subcategory": "Server:dns:1",
+        "Description": "Additional command line parameters passed directly to the Motor Town dedicated server.",
+        "Keywords": "custom command line parameters arguments",
+        "FieldName": "CustomParameters",
+        "InputType": "text",
+        "ParamFieldName": "CustomParameters",
+        "DefaultValue": ""
+    }
 ]

@@ -1,28 +1,27 @@
 [
-  {
-    "UpdateStageName": "SteamCMD Server Download",
-    "UpdateSourcePlatform": "All",
-    "UpdateSource": "SteamCMD",
-    "UpdateSourceData": "2223650",
-    "UpdateSourceArgs": "1369670",
-    "UpdateSourceVersion": "beta",
-    "ForceDownloadPlatform": "Windows",
-    "SkipOnFailure": false
-  },
-  {
-    "UpdateStageName": "Create Dedicated Server Config (Windows)",
-    "UpdateSourcePlatform": "Windows",
-    "UpdateSource": "Executable",
-    "UpdateSourceData": "powershell.exe",
-    "UpdateSourceArgs": "-NoProfile -Command \"Set-Location -LiteralPath '{{$FullBaseDir}}'; if ((Test-Path 'DedicatedServerConfig_Sample.json') -and -not (Test-Path 'DedicatedServerConfig.json')) { Copy-Item 'DedicatedServerConfig_Sample.json' 'DedicatedServerConfig.json' }\"",
-    "SkipOnFailure": true
-  },
-  {
-    "UpdateStageName": "Create Dedicated Server Config (Linux)",
-    "UpdateSourcePlatform": "Linux",
-    "UpdateSource": "Executable",
-    "UpdateSourceData": "/bin/bash",
-    "UpdateSourceArgs": "-c \"cd \\\"{{$FullBaseDir}}\\\" && if [ -f DedicatedServerConfig_Sample.json ] && [ ! -f DedicatedServerConfig.json ]; then cp DedicatedServerConfig_Sample.json DedicatedServerConfig.json; fi\"",
-    "SkipOnFailure": true
-  }
+    {
+        "UpdateStageName": "SteamCMD Server Download",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "2223650",
+        "UpdateSourceArgs": "1369670",
+        "UpdateSourceVersion": "beta",
+        "ForceDownloadPlatform": "Windows"
+    },
+    {
+        "UpdateStageName": "Create Dedicated Server Config (Windows)",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "powershell.exe",
+        "UpdateSourceArgs": "-NoProfile -Command \"Set-Location -LiteralPath '{{$FullBaseDir}}'; if ((Test-Path 'DedicatedServerConfig_Sample.json') -and -not (Test-Path 'DedicatedServerConfig.json')) { Copy-Item 'DedicatedServerConfig_Sample.json' 'DedicatedServerConfig.json' }\"",
+        "SkipOnFailure": true
+    },
+    {
+        "UpdateStageName": "Create Dedicated Server Config (Linux)",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"cd \\\"{{$FullBaseDir}}\\\" && if [ -f DedicatedServerConfig_Sample.json ] && [ ! -f DedicatedServerConfig.json ]; then cp DedicatedServerConfig_Sample.json DedicatedServerConfig.json; fi\"",
+        "SkipOnFailure": true
+    }
 ]
